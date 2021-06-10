@@ -1,0 +1,21 @@
+<aura:component access="global" implements="LTE:EventInterface">
+    <div class="fonteva-design-system">
+    	<div class="text-center page-header" style="{!'background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.17)), url('+ v.componentObj.config.image + ');'}">>
+        	<div class="page-header-content">
+                <aura:if isTrue="{!v.componentObj.config.overImage != null}">
+                    <img class="img-overimage" src="{!v.componentObj.config.overImage}"/>
+                </aura:if>
+                <aura:if isTrue="{!v.componentObj.config.sectionHeadingTitle != null}">
+                    <div class="page-header-text">
+                        <h1 class="heading-1 on-hero" style="{!'color:'+ v.componentObj.config.headingTextColor +';'}"><ui:outputText value="{!v.componentObj.config.sectionHeadingTitle}"/></h1>
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{!v.componentObj.config.sectionHeadingSubText != null}">
+                    <div class="page-header-subtext">
+                        <p class="sub-heading-1 on-hero" style="{!'color:'+ v.componentObj.config.headingTextColor +';'}"><ui:outputText value="{!v.componentObj.config.sectionHeadingSubText}"/></p>
+                    </div>
+                </aura:if>
+            </div>
+        </div>
+    </div>
+</aura:component>
