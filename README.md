@@ -19,10 +19,10 @@ Please note:
  3) Look for EventApi__Lightning_Event_Component__mdt and Manage Records
  4) Click New
  5) Configure as follows:
-  - Lightning Component API Name: 
-  - Label:
-  - Lightning Event Component Name:
+  - Lightning Component API Name: LTEComp_BannerImageWithText
+  - Label: Banner Image with Text
+  - Lightning Event Component Name: Banner Image with Text
   - Protected Component: False
   - Is Enabled: True
-  - Edit Lightning Component API Name:
+  - Edit Lightning Component API Name: LTEComp_BannerImageWithText_Config
 
